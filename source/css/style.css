@@ -1,0 +1,51 @@
+
+body, html {
+  overflow-x:hidden;
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #3d0d5f, #543a86, #6d63ad, #888dd3, #a7b8f8);
+  /* background-image: linear-gradient(to right bottom, #2d0d5f, #2e327b, #335193, #426fa7, #5c8db9); */
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  font-size: 1.5em !important;
+}
+
+.dashboard {
+  min-height: 800px;
+  height: 800px;
+}
+
+.navbar-default {
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 0 !important;
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+}
+
+a {
+  color: #000 !important;
+}
+
+a:hover {
+  background: transparent !important;
+  color: #393939 !important;
+}
+
+#sercondary-nav a {
+  color: #fff !important;
+}
+
+.btn-light {
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.btn-light:hover {
+  background-color: #fff !important;
+  box-shadow: none;
+}

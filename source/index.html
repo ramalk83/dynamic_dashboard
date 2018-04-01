@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html ng-app="CodeTaskApp">
+    <head>
+        <title>Code Test</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="AngularJS basic dynamic dashboard" />
+        <meta name="author" content="Karolos Talvis">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-route.min.js"></script>
+        <script type="text/javascript" src="js/highcharts.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/jsonService.js"></script>
+        <!-- Import the following from cdn -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body ng-controller="mainController">
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#home">Angular task</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#home"><i class="fa fa-line-chart"></i> Dashboard 1</a></li>
+            <li><a href="#about"><i class="fa fa-bar-chart"></i> Dashboard 2</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/sckarolos/dynamic_dashboard">Watch on Github <i class="fa fa-github"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="pull-right">
+          <button type="button" class="btn btn-light"><i class="fa fa-plus"></i> Chart 1</button>
+          <button type="button" class="btn btn-light"><i class="fa fa-plus"></i> Chart 2</button>
+          <button type="button" class="btn btn-light"><i class="fa fa-plus"></i> Report</button>
+        </div>
+
+      </div>
+      </br>
+      <div class="container dashboard" id="main">
+        <div ng-view></div>
+      </div>
+    </body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "CodeTaskApp",
+  "version": "1.0.0",
+  "description": "Custom dynamic dashboard ",
+  "main": "(app.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "npm": "^5.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "does not exist yet"
+  }
+}
