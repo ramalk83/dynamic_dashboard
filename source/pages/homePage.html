@@ -1,5 +1,18 @@
-<div class="jumbotron text-center">
-	<h2>Home Dashboard</h2>
-	<!-- <div id="test"></div> -->
-	<p>{{ message }}</p>
+<div ng-controller="mainController">
+
+	<div ng-repeat="item in items">
+		<div ng-if="item.number === '0'">
+			<div class="{{item.class}}" id="{{item.id}}" style="{{item.styler}}">
+				<div class="panel panel-default">
+			    <div class="panel-heading">{{item.title}}</div>
+			    <div class="panel-body">
+
+
+
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
 </div>

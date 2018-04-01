@@ -1,20 +1,35 @@
 [
     {
-        "number": "66EM67",
-        "box": "C",
-        "row": "1",
-        "level": "1"
+        "number": "0",
+        "id": "chart1",
+        "class": "col-md-8",
+        "styler": "height: 350px; background: #fff; color: #000; border-radius: 6px; padding: 20px 20px 20px 20px;",
+        "title": "Dashboard Chart 1",
+        "description": "Dashboard Chart 1 description",
+        "chart": "1",
+        "categories": "['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']",
+        "data": "[29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]"
     },
     {
-        "number": "55EM32",
-        "box": "A",
-        "row": "3",
-        "level": "2"
+      "number": "0",
+      "id": "chart1",
+      "class": "col-md-4",
+      "styler": "height: 350px; background: #fff; color: #000; border-radius: 6px; padding: 20px 20px 20px 20px;",
+      "title": "Dashboard Chart 2",
+      "description": "Dashboard Chart 2 description",
+      "chart": "1",
+      "categories": "['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']",
+      "data": "[29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]"
     },
     {
-        "number": "60EM90",
-        "box": "B",
-        "row": "5",
-        "level": "1"
+      "number": "1",
+      "id": "chart1",
+      "class": "col-md-8",
+      "styler": "height: 350px; background: #fff; color: #000; border-radius: 6px; padding: 20px 20px 20px 20px;",
+      "title": "Dashboard Chart 2",
+      "description": "Dashboard Chart 3 description",
+      "chart": "1",
+      "categories": "['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']",
+      "data": "[29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]"
     }
 ]

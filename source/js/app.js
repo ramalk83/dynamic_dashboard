@@ -29,40 +29,27 @@ CodeTaskApp.config(function($routeProvider) {
 // create the controller and inject Angular's $scope
 // The following controller should normally be in a separate file!
 CodeTaskApp.controller('mainController', function($scope, jsonService) {
-  // create a message to display in our view
-  $scope.message = 'Everyone come and see how good I look!';
 
-  jsonService.getData().then(function(data){
-    console.log('data: ', data.data);
-    $scope.data = data.data;
+  $scope.items = [];
+
+  jsonService.getData().then(function(items){
+    $scope.items = items.data;
+    console.log('data: ', $scope.items);
   });
 
-  // Highcharts.chart('container', {
-  //   title: {
-  //     text: 'Temperature Data'
-  //   },
-  //
-  //   xAxis: {
-  //     categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-  //       'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
-  //     ]
-  //   },
-  //
-  //   series: [{
-  //     data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-  //   }]
-  // });
+
 
 
 });
 
 // The following controller should normally be in a separate file!
-CodeTaskApp.controller('secondaryController', function($scope) {
+CodeTaskApp.controller('secondaryController', function($scope, jsonService) {
 
-  jsonService.getData().then(function(data){
-    console.log('data: ', data.data);
-    $scope.data = data.data;
+  $scope.items = [];
+
+  jsonService.getData().then(function(items){
+    $scope.items = items.data;
+    console.log('data: ', $scope.items);
   });
 
-  $scope.message = 'Look! I am an about page.';
 });
