@@ -1,5 +1,19 @@
-<div class="jumbotron text-center">
-	<h2>Secondary Dashboard</h2>
+<div class="row" ng-controller="secondaryController">
 
-	<p>{{ message }}</p>
+	<div ng-repeat="item in items">
+		<div ng-if="item.number === '1'">
+			<div class="{{item.class}}" id="{{item.id}}" style="{{item.styler}}">
+				<div class="panel panel-default">
+			    <div class="panel-heading"><span>Title:</span> {{item.title}}</div>
+			    <div class="panel-body">
+
+						<!-- <hc-chart options="chartOptions">generic chart</hc-chart>
+			      <hc-pie-chart title="Browser usage" data="pieData">pie chart</hc-pie-chart> -->
+
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
 </div>

@@ -12,6 +12,10 @@ body {
   font-size: 1.5em !important;
 }
 
+span {
+  font-weight: 600;
+}
+
 .dashboard {
   min-height: 800px;
   height: 800px;

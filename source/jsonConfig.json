@@ -3,33 +3,82 @@
         "number": "0",
         "id": "chart1",
         "class": "col-md-8",
-        "styler": "height: 350px; background: #fff; color: #000; border-radius: 6px; padding: 20px 20px 20px 20px;",
+        "styler": "height: 350px; color: #000; border-radius: 6px; ",
         "title": "Dashboard Chart 1",
         "description": "Dashboard Chart 1 description",
-        "chart": "1",
-        "categories": "['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']",
-        "data": "[29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]"
+        "chart": "1"
     },
     {
       "number": "0",
-      "id": "chart1",
+      "id": "chart2",
       "class": "col-md-4",
-      "styler": "height: 350px; background: #fff; color: #000; border-radius: 6px; padding: 20px 20px 20px 20px;",
+      "styler": "height: 350px; color: #000; border-radius: 6px;",
       "title": "Dashboard Chart 2",
       "description": "Dashboard Chart 2 description",
-      "chart": "1",
-      "categories": "['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']",
-      "data": "[29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]"
+      "chart": "1"
+    },
+    {
+      "number": "0",
+      "id": "chart3",
+      "class": "col-md-4",
+      "styler": "height: 350px; color: #000; border-radius: 6px;",
+      "title": "Dashboard Chart 3",
+      "description": "Dashboard Chart 3 description",
+      "chart": "1"
+    },
+    {
+      "number": "0",
+      "id": "chart4",
+      "class": "col-md-4",
+      "styler": "height: 350px; color: #000; border-radius: 6px;",
+      "title": "Dashboard Chart 4",
+      "description": "Dashboard Chart 4 description",
+      "chart": "1"
+    },
+    {
+      "number": "0",
+      "id": "chart5",
+      "class": "col-md-4",
+      "styler": "height: 350px; color: #000; border-radius: 6px;",
+      "title": "Dashboard Chart 5",
+      "description": "Dashboard Chart 5 description",
+      "chart": "1"
     },
     {
       "number": "1",
-      "id": "chart1",
+      "id": "chart6",
+      "class": "col-md-4",
+      "styler": "height: 350px; color: #000; border-radius: 6px;",
+      "title": "Dashboard Chart 6",
+      "description": "Dashboard Chart 6 description",
+      "chart": "1"
+    },
+    {
+      "number": "1",
+      "id": "chart7",
       "class": "col-md-8",
-      "styler": "height: 350px; background: #fff; color: #000; border-radius: 6px; padding: 20px 20px 20px 20px;",
-      "title": "Dashboard Chart 2",
-      "description": "Dashboard Chart 3 description",
-      "chart": "1",
-      "categories": "['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']",
-      "data": "[29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]"
+      "styler": "height: 350px; color: #000; border-radius: 6px;",
+      "title": "Dashboard Chart 7",
+      "description": "Dashboard Chart 7 description",
+      "chart": "1"
+    },
+    {
+      "number": "1",
+      "id": "chart8",
+      "class": "col-md-8",
+      "styler": "height: 350px; color: #000; border-radius: 6px;",
+      "title": "Dashboard Chart 8",
+      "description": "Dashboard Chart 8 description",
+      "chart": "1"
+    },
+    {
+      "number": "1",
+      "id": "chart9",
+      "class": "col-md-4",
+      "styler": "height: 350px; color: #000; border-radius: 6px;",
+      "title": "Dashboard Chart 9",
+      "description": "Dashboard Chart 9 description",
+      "chart": "1"
     }
+
 ]

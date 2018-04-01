@@ -27,7 +27,7 @@ CodeTaskApp.config(function($routeProvider) {
 });
 
 // create the controller and inject Angular's $scope
-// The following controller should normally be in a separate file!
+// The following controller should normally be in a separate filechartDirective
 CodeTaskApp.controller('mainController', function($scope, jsonService) {
 
   $scope.items = [];
@@ -36,9 +36,6 @@ CodeTaskApp.controller('mainController', function($scope, jsonService) {
     $scope.items = items.data;
     console.log('data: ', $scope.items);
   });
-
-
-
 
 });
 

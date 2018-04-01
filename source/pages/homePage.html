@@ -1,10 +1,10 @@
-<div ng-controller="mainController">
+<div class="row" ng-controller="mainController">
 
 	<div ng-repeat="item in items">
 		<div ng-if="item.number === '0'">
 			<div class="{{item.class}}" id="{{item.id}}" style="{{item.styler}}">
 				<div class="panel panel-default">
-			    <div class="panel-heading">{{item.title}}</div>
+			    <div class="panel-heading"><span>Title:</span> {{item.title}}</div>
 			    <div class="panel-body">
 
 
