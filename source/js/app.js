@@ -1,19 +1,8 @@
-// (function () {
-//     angular.module('CodeTaskApp', ['ngRoute']);
-//
-//
-//
-//
-//     angular.module('CodeTaskApp').controller('MainController', function ($scope, venuesSearchService) {
-//     });
-//
-// })();
-
 
 // create the module and name it CodeTaskApp
 var CodeTaskApp = angular.module('CodeTaskApp', ['ngRoute']);
 
-// configure our routes
+// configure page routes
 CodeTaskApp.config(function($routeProvider) {
   $routeProvider
 
@@ -37,20 +26,15 @@ CodeTaskApp.config(function($routeProvider) {
 
 });
 
-
-
 // create the controller and inject Angular's $scope
+// The following controller should normally be in a separate file!
 CodeTaskApp.controller('mainController', function($scope, jsonService) {
   // create a message to display in our view
   $scope.message = 'Everyone come and see how good I look!';
 
-  var _this = this;
-
-  jsonService.getData().then(function(response){
-      //do something with response
-      _this.data = response.data;
-  }).catch(function(response){
-    //handle the error
+  jsonService.getData().then(function(data){
+    console.log('data: ', data.data);
+    $scope.data = data.data;
   });
 
   // Highcharts.chart('container', {
@@ -72,6 +56,13 @@ CodeTaskApp.controller('mainController', function($scope, jsonService) {
 
 });
 
+// The following controller should normally be in a separate file!
 CodeTaskApp.controller('secondaryController', function($scope) {
+
+  jsonService.getData().then(function(data){
+    console.log('data: ', data.data);
+    $scope.data = data.data;
+  });
+
   $scope.message = 'Look! I am an about page.';
 });
