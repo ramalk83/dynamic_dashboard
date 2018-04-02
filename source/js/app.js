@@ -168,7 +168,7 @@ CodeTaskApp.controller('secondaryController', function($scope, jsonService) {
               'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
       },
       series: [{
-          data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 116.4, 194.1, 95.6, 54.4]
+          data: [29.9, 71.5, 106.4, 19.2, 144.0, 116.0, 135.6, 148.5, 116.4, 54.1, 95.6, 54.4]
       }]
   };
 
