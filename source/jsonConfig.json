@@ -6,7 +6,7 @@
         "styler": "height: 350px; color: #000; border-radius: 6px; ",
         "title": "Dashboard Chart 1",
         "description": "Dashboard Chart 1 description",
-        "chart": "1"
+        "chart": "hc-pie-chart"
     },
     {
       "number": "0",
@@ -15,7 +15,7 @@
       "styler": "height: 350px; color: #000; border-radius: 6px;",
       "title": "Dashboard Chart 2",
       "description": "Dashboard Chart 2 description",
-      "chart": "1"
+      "chart": "hc-chart"
     },
     {
       "number": "0",
@@ -24,7 +24,7 @@
       "styler": "height: 350px; color: #000; border-radius: 6px;",
       "title": "Dashboard Chart 3",
       "description": "Dashboard Chart 3 description",
-      "chart": "1"
+      "chart": "hc-chart"
     },
     {
       "number": "0",
@@ -33,7 +33,7 @@
       "styler": "height: 350px; color: #000; border-radius: 6px;",
       "title": "Dashboard Chart 4",
       "description": "Dashboard Chart 4 description",
-      "chart": "1"
+      "chart": "hc-chart"
     },
     {
       "number": "0",
@@ -42,7 +42,7 @@
       "styler": "height: 350px; color: #000; border-radius: 6px;",
       "title": "Dashboard Chart 5",
       "description": "Dashboard Chart 5 description",
-      "chart": "1"
+      "chart": "hc-chart"
     },
     {
       "number": "1",
@@ -51,7 +51,7 @@
       "styler": "height: 350px; color: #000; border-radius: 6px;",
       "title": "Dashboard Chart 6",
       "description": "Dashboard Chart 6 description",
-      "chart": "1"
+      "chart": "hc-chart"
     },
     {
       "number": "1",
@@ -60,7 +60,7 @@
       "styler": "height: 350px; color: #000; border-radius: 6px;",
       "title": "Dashboard Chart 7",
       "description": "Dashboard Chart 7 description",
-      "chart": "1"
+      "chart": "hc-pie-chart"
     },
     {
       "number": "1",
@@ -69,7 +69,7 @@
       "styler": "height: 350px; color: #000; border-radius: 6px;",
       "title": "Dashboard Chart 8",
       "description": "Dashboard Chart 8 description",
-      "chart": "1"
+      "chart": "hc-pie-chart"
     },
     {
       "number": "1",
@@ -78,7 +78,7 @@
       "styler": "height: 350px; color: #000; border-radius: 6px;",
       "title": "Dashboard Chart 9",
       "description": "Dashboard Chart 9 description",
-      "chart": "1"
+      "chart": "hc-chart"
     }
 
 ]

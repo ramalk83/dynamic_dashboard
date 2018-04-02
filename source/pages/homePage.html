@@ -2,13 +2,16 @@
 
 	<div ng-repeat="item in items">
 		<div ng-if="item.number === '0'">
-			<div class="{{item.class}}" id="{{item.id}}" style="{{item.styler}}">
-				<div class="panel panel-default">
+			<div class="{{item.class}}" id="{{item.id}}">
+				<div class="panel panel-default" style="{{item.styler}}">
 			    <div class="panel-heading"><span>Title:</span> {{item.title}}</div>
 			    <div class="panel-body">
-
-
-
+						<div ng-if="item.chart === 'hc-chart'">
+							<hc-chart options="chartOptions">Placeholder for generic chart</hc-chart>
+						</div>
+						<div ng-if="item.chart === 'hc-pie-chart'">
+							<hc-pie-chart title="Browser usage" data="pieData">Placeholder for pie chart</hc-pie-chart>
+						</div>
 					</div>
 			  </div>
 			</div>

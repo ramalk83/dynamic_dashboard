@@ -53,3 +53,7 @@ a:hover {
   background-color: #fff !important;
   box-shadow: none;
 }
+
+.highcharts-container {
+    height: 280px !important; 
+}
