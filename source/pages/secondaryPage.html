@@ -1,8 +1,8 @@
-
-<div class="row" ng-controller="secondaryController">
+<div class="row" ng-controller="secondaryController" id="secondaryPageId">
 	<div class="container">
 		<div class="pull-right">
 			<button data-toggle="modal" data-target="#exampleModal" type="button" class="btn btn-light"><i class="fa fa-plus"></i> Add new Chart </button>
+			<button ng-click="export()" type="button" class="btn btn-light"><i class="fa fa-plus"></i> Export Page</button>
 		</div>
 	</div>
 	</br>
@@ -13,10 +13,10 @@
 			    <div class="panel-heading"><span>Title:</span> {{item.title}}</div>
 			    <div class="panel-body">
 						<div ng-if="item.chart === 'hc-chart'">
-							<hc-chart options="chartOptions">Placeholder for generic chart</hc-chart>
+							<hc-chart title="" options="chartOptions"></hc-chart>
 						</div>
 						<div ng-if="item.chart === 'hc-pie-chart'">
-							<hc-pie-chart title="Browser usage" data="pieData">Placeholder for pie chart</hc-pie-chart>
+							<hc-pie-chart title="" data="pieData"></hc-pie-chart>
 						</div>
 					</div>
 			  </div>
@@ -53,5 +53,5 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
