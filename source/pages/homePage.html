@@ -1,21 +1,56 @@
-<div class="row" ng-controller="mainController">
 
+<div class="row" ng-controller="mainController">
+	<div class="container">
+		<div class="pull-right">
+			<button data-toggle="modal" data-target="#exampleModal" type="button" class="btn btn-light"><i class="fa fa-plus"></i> Add new Chart </button>
+		</div>
+	</div>
+	</br>
 	<div ng-repeat="item in items">
 		<div ng-if="item.number === '0'">
-			<div class="{{item.class}}" id="{{item.id}}">
+			<div class="{{item.class}}">
 				<div class="panel panel-default" style="{{item.styler}}">
 			    <div class="panel-heading"><span>Title:</span> {{item.title}}</div>
 			    <div class="panel-body">
 						<div ng-if="item.chart === 'hc-chart'">
-							<hc-chart options="chartOptions">Placeholder for generic chart</hc-chart>
+							<hc-chart options="chartOptions"></hc-chart>
 						</div>
 						<div ng-if="item.chart === 'hc-pie-chart'">
-							<hc-pie-chart title="Browser usage" data="pieData">Placeholder for pie chart</hc-pie-chart>
+							<hc-pie-chart title="Browser usage" data="pieData"></hc-pie-chart>
 						</div>
 					</div>
 			  </div>
 			</div>
 		</div>
 	</div>
-
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="exampleModalLabel">Add new chart</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							</br>
+							<label for="usr">Chart Title:</label>
+							<input ng-model="titleChart" type="text" class="form-control" id="usr">
+							</br>
+							<label class="radio-inline">
+								<input ng-value="0" ng-model="chartType" type="radio" name="optradio"><i class="fa fa-line-chart"></i> Line Chart
+							</label>
+							<label class="radio-inline">
+								<input ng-value="1" ng-model="chartType" type="radio" name="optradio"><i class="fa fa-bar-chart"></i> Pie Chart
+							</label>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button ng-click="clickMe(IsDisplay)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-plus"></i> Add to Dashboard</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

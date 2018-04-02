@@ -28,14 +28,43 @@ CodeTaskApp.config(function($routeProvider) {
 
 // create the controller and inject Angular's $scope
 // The following controller should normally be in a separate filechartDirective
-CodeTaskApp.controller('mainController', function($scope, jsonService) {
+CodeTaskApp.controller('mainController', function($scope, jsonService, $http, $route) {
 
-  $scope.items = [];
+    $scope.items = [];
+    $scope.IsDisplay = false;
+    $scope.titleChart = '';
 
-  jsonService.getData().then(function(items){
-    $scope.items = items.data;
-    console.log('data: ', $scope.items);
-  });
+   jsonService.getData().then(function(items){
+     $scope.items = items.data;
+   });
+
+   $scope.clickMe = function (clicked) {
+      if ($scope.chartType === 0) {
+        var newItem = {
+          "number": "0",
+          "class": "col-md-4",
+          "styler": "height: 350px; color: #000; border-radius: 6px;",
+          "title": $scope.titleChart,
+          "description": "new chart",
+          "chart": "hc-chart"
+        };
+        $scope.items.push(newItem);
+
+      } else if ($scope.chartType === 1) {
+        var newItem = {
+          "number": "0",
+          "class": "col-md-8",
+          "styler": "height: 350px; color: #000; border-radius: 6px;",
+          "title": $scope.titleChart,
+          "description": "new chart",
+          "chart": "hc-pie-chart"
+        };
+        $scope.items.push(newItem);
+      }
+
+      console.log('items are:', $scope.items);
+
+   };
 
   // Sample options for first chart
   $scope.chartOptions = {
@@ -88,11 +117,40 @@ CodeTaskApp.controller('mainController', function($scope, jsonService) {
 CodeTaskApp.controller('secondaryController', function($scope, jsonService) {
 
   $scope.items = [];
+  $scope.IsDisplay = false;
+  $scope.titleChart = '';
 
-  jsonService.getData().then(function(items){
-    $scope.items = items.data;
-    console.log('data: ', $scope.items);
-  });
+ jsonService.getData().then(function(items){
+   $scope.items = items.data;
+ });
+
+ $scope.clickMe = function (clicked) {
+    if ($scope.chartType === 0) {
+      var newItem = {
+        "number": "1",
+        "class": "col-md-4",
+        "styler": "height: 350px; color: #000; border-radius: 6px;",
+        "title": $scope.titleChart,
+        "description": "new chart",
+        "chart": "hc-chart"
+      };
+      $scope.items.push(newItem);
+
+    } else if ($scope.chartType === 1) {
+      var newItem = {
+        "number": "1",
+        "class": "col-md-8",
+        "styler": "height: 350px; color: #000; border-radius: 6px;",
+        "title": $scope.titleChart,
+        "description": "new chart",
+        "chart": "hc-pie-chart"
+      };
+      $scope.items.push(newItem);
+    }
+
+    console.log('items are:', $scope.items);
+
+ };
 
   // Sample options for first chart
   $scope.chartOptions = {
