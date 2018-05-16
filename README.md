@@ -1,7 +1,4 @@
-# dynamic_dashboard
 Angularjs dynamic dashboard implementation
-
-# Code task
 
 ### Demo URL: http://ktalvis.com/dashboard/source/#/
 
@@ -32,9 +29,6 @@ The app is set to be listening to port: 8888 (http://localhost:8888)
 ### Comments:  
 - Some frameworks/libraries like bootstrap are being called via cdn urls in order to reduce the size of the application. AngularJS is installed via npm and node.js in order to show
 - how a dependency can be handled. 
-
-- I used angularJS 1.4.7 due to familiarity with the version. 
-- CSS preprocessors is not a need for such a small project.
 
 - MainController and secondaryController should normally be in separate files, but based on the size of the project they have been placed in app.js.
 
